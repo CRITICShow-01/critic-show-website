@@ -7,7 +7,7 @@
 
 body{
     background:#0b1220;
-    color:#ffffff;
+    color:#fff;
     line-height:1.6;
 }
 
@@ -16,12 +16,7 @@ body{
     display:block;
 }
 
-.container{
-    max-width:1000px;
-    margin:auto;
-}
-
-.profile{
+.hero{
     text-align:center;
     padding:30px 20px;
 }
@@ -37,47 +32,99 @@ body{
 
 h1{
     margin-top:15px;
-    font-size:40px;
+    font-size:42px;
 }
 
 .tagline{
-    color:#c7d2fe;
-    margin:15px 0 25px;
+    color:#4fc3f7;
+    font-size:20px;
+    margin:10px 0;
 }
 
-.subscribe,
-.watch{
+.description{
+    max-width:700px;
+    margin:15px auto;
+    color:#d1d5db;
+}
+
+.subscribe-btn,
+.watch-btn{
     display:inline-block;
+    margin-top:20px;
+    padding:14px 28px;
     background:#ff3b30;
     color:#fff;
     text-decoration:none;
-    padding:14px 28px;
     border-radius:8px;
     font-weight:bold;
-    transition:.3s;
 }
 
-.subscribe:hover,
-.watch:hover{
+.subscribe-btn:hover,
+.watch-btn:hover{
     background:#d92d20;
 }
 
-.about,
-.videos{
+nav{
+    background:#111827;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#4fc3f7;
+}
+
+.section{
+    max-width:900px;
+    margin:40px auto;
     background:#162033;
-    margin:25px 15px;
     padding:25px;
     border-radius:12px;
 }
 
-.about h2,
-.videos h2{
-    margin-bottom:15px;
+.section h2{
     color:#4fc3f7;
+    margin-bottom:15px;
+}
+
+.section-text{
+    color:#d1d5db;
+}
+
+.video-card{
+    margin-top:20px;
+    background:#1f2937;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
 }
 
 footer{
     text-align:center;
-    padding:25px;
+    padding:30px;
+    background:#111827;
     color:#bbb;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    h1{
+        font-size:32px;
+    }
+
+    .logo{
+        width:90px;
+        height:90px;
+    }
+
+    .tagline{
+        font-size:18px;
+    }
 }
